@@ -12,6 +12,7 @@ Modern printers perform many tasks beyond printing, becoming true office warmach
 <p></p>
 <img width="413" alt="printer1" src="https://github.com/Th3l3mic/HACKING/assets/167564930/dddb1c42-ad84-4b85-a33e-d26abcc6868e">
 
+<p></p>
 Methods of revealing the password
 <p></p>
 1. Some printers have a connection testing functionality, such as Kyocera office devices (as well as many others). Being on the same network, we can intercept a request from the printer using this functionality and sending the authentication to our IP address, where we have netcat listener set up. <code>netcat -l -vv -p 444</code>

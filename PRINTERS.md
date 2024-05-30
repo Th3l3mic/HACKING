@@ -3,10 +3,10 @@
 
 <h1>Printer - hacker's best friend</h1>
 
-<b>From the default administrator password to compromised domains </b>
+<b>From the default administrator password to compromised domain </b>
 <p></p>
 
-The issue is not new, but still visible in the environment. Network administrators often neglect poorly configured network devices, such as printers. These devices can be a perfect attack vector for hackers. First, let's explain how our printers function, and then we will discuss how they can harm us by presenting the most common attack scenarios on printers.
+The issue is not new, but still visible in the environment. Network administrators often neglect poorly configured network devices, such as printers. These devices can be a perfect attack vector for hackers. First, let's explain how our printers work, and then we will discuss how they can harm us by presenting the most common attack scenarios on printers.
 
 Modern printers perform many tasks beyond printing, becoming true office warmachines. One popular functionality of a printing device is scanning a document and then sending it to a recipient in address book. The printer must authenticate itself with the domain administrator password in this process. Very often, this password is blackened on the printer page. Revealing the password may be easier than IT administrators think.
 <p></p>
@@ -21,11 +21,11 @@ Methods of revealing the password
 <p></p>
 2. We can also intercept the request using a proxy server like Burp Suite during normal device usage.
 
-Also default printer credentials, even when dont allow us to get domain admin could lead to data leaks for example: usernames. 
+Even when the default printer credentials won't allow us to get the domain admin, it could lead to data leaks for example: usernames. 
 
 <b>Using the Printer Exploitation Toolkit PRET</b>
 
-PRET is a tool created by Ruhr University in Bochum that connects to a printing device and exploits its features using one of the popular printer languages (PostScript, PJL, PCL). PRET provides huge capabilities:
+PRET is a tool created by Ruhr University in Bochum that connects to a printing device and exploits it's features using one of the popular printer languages (PostScript, PJL, PCL). PRET provides huge capabilities:
 
 - manipulating with print jobs,
 - accessing memory,
